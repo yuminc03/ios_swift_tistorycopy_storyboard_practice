@@ -19,8 +19,24 @@
 		05A4B4062759F99E0030FDE0 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4B4052759F99E0030FDE0 /* NotificationViewController.swift */; };
 		05A4B4082759F9DE0030FDE0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4B4072759F9DE0030FDE0 /* ProfileViewController.swift */; };
 		05A4B40B275A082F0030FDE0 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4B40A275A082F0030FDE0 /* ProfileModel.swift */; };
-		05A4B40D275A11750030FDE0 /* ProfileInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4B40C275A11750030FDE0 /* ProfileInfoHeader.swift */; };
 		05A4B411275A13760030FDE0 /* ProfileViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4B410275A13760030FDE0 /* ProfileViewControllerExtensions.swift */; };
+		05B926822760432200C0F333 /* ProfileCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B926812760432200C0F333 /* ProfileCategoryViewController.swift */; };
+		05B926842760687500C0F333 /* ProfileCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B926832760687500C0F333 /* ProfileCategoryView.swift */; };
+		05B92686276068B900C0F333 /* ProfileCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05B92685276068B900C0F333 /* ProfileCategoryView.xib */; };
+		05B9268927606D7000C0F333 /* ProfileCategoryStackCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05B9268827606D7000C0F333 /* ProfileCategoryStackCellView.xib */; };
+		05B9268B27608C0900C0F333 /* DismissControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9268A27608C0900C0F333 /* DismissControllerView.swift */; };
+		05B9268D27608D2E00C0F333 /* DismissControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05B9268C27608D2E00C0F333 /* DismissControllerView.xib */; };
+		05B9268F2760919500C0F333 /* ProfileCategoryStackCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9268E2760919500C0F333 /* ProfileCategoryStackCellView.swift */; };
+		05C9E951275D830F009AC751 /* MyBlogPostTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9E950275D830F009AC751 /* MyBlogPostTableViewHeader.swift */; };
+		05C9E955275D83AE009AC751 /* MyBlogPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9E954275D83AE009AC751 /* MyBlogPostTableViewCell.swift */; };
+		05C9E958275D9126009AC751 /* ProfileInfoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C9E957275D9126009AC751 /* ProfileInfoHeaderView.xib */; };
+		05C9E95A275D91D3009AC751 /* ProfileInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9E959275D91D3009AC751 /* ProfileInfoHeaderView.swift */; };
+		05C9E95C275D9533009AC751 /* MyBlogPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C9E95B275D9533009AC751 /* MyBlogPostTableViewCell.xib */; };
+		05C9E97A275DA7AF009AC751 /* MyBlogPostTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C9E979275DA7AF009AC751 /* MyBlogPostTableViewHeader.xib */; };
+		05C9E980275E0299009AC751 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9E97F275E0299009AC751 /* NotificationModel.swift */; };
+		05C9E983275E0502009AC751 /* NotificationTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9E982275E0502009AC751 /* NotificationTableViewHeader.swift */; };
+		05C9E985275E0572009AC751 /* NotificationTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C9E984275E0572009AC751 /* NotificationTableViewHeader.xib */; };
+		05D4C58A27609FA100DD493E /* ProfileCategoryViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D4C58927609FA100DD493E /* ProfileCategoryViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +54,24 @@
 		05A4B4052759F99E0030FDE0 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		05A4B4072759F9DE0030FDE0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		05A4B40A275A082F0030FDE0 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
-		05A4B40C275A11750030FDE0 /* ProfileInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeader.swift; sourceTree = "<group>"; };
 		05A4B410275A13760030FDE0 /* ProfileViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerExtensions.swift; sourceTree = "<group>"; };
+		05B926812760432200C0F333 /* ProfileCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCategoryViewController.swift; sourceTree = "<group>"; };
+		05B926832760687500C0F333 /* ProfileCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCategoryView.swift; sourceTree = "<group>"; };
+		05B92685276068B900C0F333 /* ProfileCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCategoryView.xib; sourceTree = "<group>"; };
+		05B9268827606D7000C0F333 /* ProfileCategoryStackCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCategoryStackCellView.xib; sourceTree = "<group>"; };
+		05B9268A27608C0900C0F333 /* DismissControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissControllerView.swift; sourceTree = "<group>"; };
+		05B9268C27608D2E00C0F333 /* DismissControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DismissControllerView.xib; sourceTree = "<group>"; };
+		05B9268E2760919500C0F333 /* ProfileCategoryStackCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCategoryStackCellView.swift; sourceTree = "<group>"; };
+		05C9E950275D830F009AC751 /* MyBlogPostTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBlogPostTableViewHeader.swift; sourceTree = "<group>"; };
+		05C9E954275D83AE009AC751 /* MyBlogPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBlogPostTableViewCell.swift; sourceTree = "<group>"; };
+		05C9E957275D9126009AC751 /* ProfileInfoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoHeaderView.xib; sourceTree = "<group>"; };
+		05C9E959275D91D3009AC751 /* ProfileInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderView.swift; sourceTree = "<group>"; };
+		05C9E95B275D9533009AC751 /* MyBlogPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBlogPostTableViewCell.xib; sourceTree = "<group>"; };
+		05C9E979275DA7AF009AC751 /* MyBlogPostTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBlogPostTableViewHeader.xib; sourceTree = "<group>"; };
+		05C9E97F275E0299009AC751 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		05C9E982275E0502009AC751 /* NotificationTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewHeader.swift; sourceTree = "<group>"; };
+		05C9E984275E0572009AC751 /* NotificationTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewHeader.xib; sourceTree = "<group>"; };
+		05D4C58927609FA100DD493E /* ProfileCategoryViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCategoryViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				05A4B4052759F99E0030FDE0 /* NotificationViewController.swift */,
+				05C9E97F275E0299009AC751 /* NotificationModel.swift */,
+				05C9E981275E04C2009AC751 /* TableView */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -134,7 +168,10 @@
 				05A4B40A275A082F0030FDE0 /* ProfileModel.swift */,
 				05A4B4072759F9DE0030FDE0 /* ProfileViewController.swift */,
 				05A4B410275A13760030FDE0 /* ProfileViewControllerExtensions.swift */,
+				05B9268C27608D2E00C0F333 /* DismissControllerView.xib */,
+				05B9268A27608C0900C0F333 /* DismissControllerView.swift */,
 				05A4B409275A07BD0030FDE0 /* TableView */,
+				05B9267E276042BC00C0F333 /* ProfileCategory */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -142,7 +179,58 @@
 		05A4B409275A07BD0030FDE0 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				05A4B40C275A11750030FDE0 /* ProfileInfoHeader.swift */,
+				05C9E952275D8384009AC751 /* Header */,
+				05C9E953275D838A009AC751 /* Cell */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		05B9267E276042BC00C0F333 /* ProfileCategory */ = {
+			isa = PBXGroup;
+			children = (
+				05B926812760432200C0F333 /* ProfileCategoryViewController.swift */,
+				05B9268727606BCD00C0F333 /* View */,
+			);
+			path = ProfileCategory;
+			sourceTree = "<group>";
+		};
+		05B9268727606BCD00C0F333 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05B92685276068B900C0F333 /* ProfileCategoryView.xib */,
+				05B926832760687500C0F333 /* ProfileCategoryView.swift */,
+				05D4C58927609FA100DD493E /* ProfileCategoryViewExtensions.swift */,
+				05B9268827606D7000C0F333 /* ProfileCategoryStackCellView.xib */,
+				05B9268E2760919500C0F333 /* ProfileCategoryStackCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05C9E952275D8384009AC751 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				05C9E957275D9126009AC751 /* ProfileInfoHeaderView.xib */,
+				05C9E959275D91D3009AC751 /* ProfileInfoHeaderView.swift */,
+				05C9E979275DA7AF009AC751 /* MyBlogPostTableViewHeader.xib */,
+				05C9E950275D830F009AC751 /* MyBlogPostTableViewHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		05C9E953275D838A009AC751 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				05C9E95B275D9533009AC751 /* MyBlogPostTableViewCell.xib */,
+				05C9E954275D83AE009AC751 /* MyBlogPostTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		05C9E981275E04C2009AC751 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				05C9E982275E0502009AC751 /* NotificationTableViewHeader.swift */,
+				05C9E984275E0572009AC751 /* NotificationTableViewHeader.xib */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -208,6 +296,13 @@
 				05A4B3F22759F5100030FDE0 /* LaunchScreen.storyboard in Resources */,
 				05A4B3EF2759F5100030FDE0 /* Assets.xcassets in Resources */,
 				05A4B3ED2759F50F0030FDE0 /* Main.storyboard in Resources */,
+				05C9E985275E0572009AC751 /* NotificationTableViewHeader.xib in Resources */,
+				05C9E97A275DA7AF009AC751 /* MyBlogPostTableViewHeader.xib in Resources */,
+				05B9268D27608D2E00C0F333 /* DismissControllerView.xib in Resources */,
+				05B9268927606D7000C0F333 /* ProfileCategoryStackCellView.xib in Resources */,
+				05B92686276068B900C0F333 /* ProfileCategoryView.xib in Resources */,
+				05C9E95C275D9533009AC751 /* MyBlogPostTableViewCell.xib in Resources */,
+				05C9E958275D9126009AC751 /* ProfileInfoHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,15 +313,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C9E983275E0502009AC751 /* NotificationTableViewHeader.swift in Sources */,
+				05C9E980275E0299009AC751 /* NotificationModel.swift in Sources */,
 				05A4B40B275A082F0030FDE0 /* ProfileModel.swift in Sources */,
+				05B9268B27608C0900C0F333 /* DismissControllerView.swift in Sources */,
 				05A4B3EA2759F50F0030FDE0 /* TabBarViewController.swift in Sources */,
+				05C9E951275D830F009AC751 /* MyBlogPostTableViewHeader.swift in Sources */,
 				05A4B4082759F9DE0030FDE0 /* ProfileViewController.swift in Sources */,
 				05A4B4042759F9730030FDE0 /* WritingViewController.swift in Sources */,
+				05D4C58A27609FA100DD493E /* ProfileCategoryViewExtensions.swift in Sources */,
 				05A4B3E62759F50F0030FDE0 /* AppDelegate.swift in Sources */,
 				05A4B4022759F8C70030FDE0 /* FeedViewController.swift in Sources */,
-				05A4B40D275A11750030FDE0 /* ProfileInfoHeader.swift in Sources */,
+				05C9E955275D83AE009AC751 /* MyBlogPostTableViewCell.swift in Sources */,
 				05A4B3E82759F50F0030FDE0 /* SceneDelegate.swift in Sources */,
 				05A4B411275A13760030FDE0 /* ProfileViewControllerExtensions.swift in Sources */,
+				05B926822760432200C0F333 /* ProfileCategoryViewController.swift in Sources */,
+				05B9268F2760919500C0F333 /* ProfileCategoryStackCellView.swift in Sources */,
+				05C9E95A275D91D3009AC751 /* ProfileInfoHeaderView.swift in Sources */,
+				05B926842760687500C0F333 /* ProfileCategoryView.swift in Sources */,
 				05A4B4002759F8230030FDE0 /* HomeViewController.swift in Sources */,
 				05A4B4062759F99E0030FDE0 /* NotificationViewController.swift in Sources */,
 			);
