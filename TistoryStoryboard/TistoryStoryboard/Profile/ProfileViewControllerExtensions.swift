@@ -8,16 +8,19 @@
 import UIKit
 
 extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return profileModel.profileCategory[selectedCategoryIndex].profileCategoryCell.count
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return UIView()
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MyBlogPostTableViewHeader") as! MyBlogPostTableViewHeader
+        header.categoryChangeButton.addTarget(self, action: #selector(categoryChangeButtonDidTapped), for: .touchUpInside)
+        return header
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -25,8 +28,18 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let data = profileModel.profileCategory[selectedCategoryIndex].profileCategoryCell[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyBlogPostTableViewCell", for: indexPath) as! MyBlogPostTableViewCell
+        cell.setPostImageViewColor(index: indexPath.row)
+        cell.setData(title: data.cellTitle, likeNum: data.cellLikeNum, commentNum: data.cellCommentNum, date: data.cellDate)
+        return cell
     }
     
-    
+    @objc private func categoryChangeButtonDidTapped(button: UIButton) {
+        tabBarController?.tabBar.isHidden = true
+//        print("tapped")
+        let vc = ProfileCategoryViewController(profileCategory: profileModel.profileCategory)
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: false)
+    }
 }

@@ -49,8 +49,20 @@
                     <view key="view" contentMode="scaleToFill" id="rHO-ru-GHK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jbc-em-fjb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dUQ-kj-DRZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dUQ-kj-DRZ" firstAttribute="trailing" secondItem="Jbc-em-fjb" secondAttribute="trailing" id="6k4-8L-HFn"/>
+                            <constraint firstItem="Jbc-em-fjb" firstAttribute="top" secondItem="dUQ-kj-DRZ" secondAttribute="top" id="Snf-jm-aNJ"/>
+                            <constraint firstItem="dUQ-kj-DRZ" firstAttribute="bottom" secondItem="Jbc-em-fjb" secondAttribute="bottom" id="tcz-0z-OUg"/>
+                            <constraint firstItem="Jbc-em-fjb" firstAttribute="leading" secondItem="dUQ-kj-DRZ" secondAttribute="leading" id="yhV-oe-UIs"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="NOTICE" image="bell" catalog="system" id="ukL-5R-6Br"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -67,30 +79,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Bn-PT-oqa">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Bn-PT-oqa">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="87" id="gxf-Vp-nLE">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="87"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gxf-Vp-nLE" id="BKY-DW-tmr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="m0Y-JS-tVk" customClass="ProfileInfoHeaderView" customModule="TistoryStoryboard" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="subscribeNum" value="1"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="blogName" value="천천히 해도 괜찮아"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="blogUrl" value="dpffldk.tistory.com"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
                                 <connections>
-                                    <outlet property="dataSource" destination="mlM-uV-Exs" id="Ddz-O0-Hfc"/>
-                                    <outlet property="delegate" destination="mlM-uV-Exs" id="P32-hA-5i8"/>
+                                    <outlet property="dataSource" destination="mlM-uV-Exs" id="t99-Xt-mdW"/>
+                                    <outlet property="delegate" destination="mlM-uV-Exs" id="Ni2-cn-xTG"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1fz-zU-igP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1Bn-PT-oqa" firstAttribute="top" secondItem="1fz-zU-igP" secondAttribute="top" id="49e-p1-MTy"/>
                             <constraint firstItem="1fz-zU-igP" firstAttribute="bottom" secondItem="1Bn-PT-oqa" secondAttribute="bottom" id="7AQ-1r-JrW"/>
+                            <constraint firstItem="1Bn-PT-oqa" firstAttribute="top" secondItem="1fz-zU-igP" secondAttribute="top" id="Ikm-1i-3Lj"/>
                             <constraint firstItem="1fz-zU-igP" firstAttribute="trailing" secondItem="1Bn-PT-oqa" secondAttribute="trailing" id="Ze1-qw-kCk"/>
                             <constraint firstItem="1Bn-PT-oqa" firstAttribute="leading" secondItem="1fz-zU-igP" secondAttribute="leading" id="Zk8-OW-BYL"/>
                         </constraints>
@@ -98,12 +109,42 @@
                     <tabBarItem key="tabBarItem" title="PROFILE" image="person.crop.artframe" catalog="system" id="9Wf-Sh-Gc7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="ProfileTableView" destination="1Bn-PT-oqa" id="eS2-Bq-yvg"/>
+                        <outlet property="profileInfoHeaderView" destination="m0Y-JS-tVk" id="SFS-wJ-qNl"/>
+                        <outlet property="profileTableView" destination="1Bn-PT-oqa" id="OFh-WO-9nh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KoW-10-WKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3731.884057971015" y="814.95535714285711"/>
+        </scene>
+        <!--ProfileCategoryViewController-->
+        <scene sceneID="CMf-vE-q1j">
+            <objects>
+                <viewController title="ProfileCategoryViewController" id="P4J-hg-TO9" customClass="ProfileCategoryViewController" customModule="TistoryStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDU-F8-1JI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-XE-9g7" customClass="ProfileCategoryView" customModule="TistoryStoryboard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="162" width="414" height="700"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="700" id="z3f-eA-doQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C1P-Jz-mOJ"/>
+                        <color key="backgroundColor" white="1" alpha="0.30417011589403975" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C1P-Jz-mOJ" firstAttribute="trailing" secondItem="jeQ-XE-9g7" secondAttribute="trailing" id="3eY-Jm-nGv"/>
+                            <constraint firstItem="jeQ-XE-9g7" firstAttribute="leading" secondItem="C1P-Jz-mOJ" secondAttribute="leading" id="EpF-fo-rp9"/>
+                            <constraint firstItem="C1P-Jz-mOJ" firstAttribute="bottom" secondItem="jeQ-XE-9g7" secondAttribute="bottom" id="Tbw-pb-XJA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ivY-ks-eYj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4557" y="815"/>
         </scene>
         <!--HomeViewController-->
         <scene sceneID="Ghc-Ib-iif">

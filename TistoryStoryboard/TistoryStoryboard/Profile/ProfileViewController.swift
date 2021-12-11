@@ -10,11 +10,16 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     var profileModel = ProfileModel()
-    @IBOutlet weak var ProfileTableView: UITableView!
+    var selectedCategoryIndex: Int = 0
+    @IBOutlet weak var profileTableView: UITableView!
+    @IBOutlet weak var profileInfoHeaderView: ProfileInfoHeaderView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configulations()
+        setTableView()
+        setProfileInfoHeader()
     }
     
     private func configulations() {
@@ -165,6 +170,25 @@ class ProfileViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    private func setTableView() {
+        profileTableView.backgroundColor = .clear
+        profileTableView.delegate = self
+        profileTableView.dataSource = self
+        profileTableView.register(UINib(nibName: "MyBlogPostTableViewCell", bundle: nil), forCellReuseIdentifier: "MyBlogPostTableViewCell")
+        profileTableView.register(UINib(nibName: "MyBlogPostTableViewHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "MyBlogPostTableViewHeader")
+    }
+    
+    private func setProfileInfoHeader() {
+        profileInfoHeaderView.setProfileModel(model: self.profileModel)
+        profileInfoHeaderView.setData()
+        profileInfoHeaderView.blogUrlButton.addTarget(self, action: #selector(blogUrlButtonDidTapped), for: .touchUpInside)
+    }
+    
+    @objc private func blogUrlButtonDidTapped(button: UIButton) {
+        print("tapped")
+        
     }
     
 }
