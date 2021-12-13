@@ -120,14 +120,14 @@
         <!--ProfileCategoryViewController-->
         <scene sceneID="CMf-vE-q1j">
             <objects>
-                <viewController title="ProfileCategoryViewController" id="P4J-hg-TO9" customClass="ProfileCategoryViewController" customModule="TistoryStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileCategoryViewController" title="ProfileCategoryViewController" id="P4J-hg-TO9" customClass="ProfileCategoryViewController" customModule="TistoryStoryboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xDU-F8-1JI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-XE-9g7" customClass="ProfileCategoryView" customModule="TistoryStoryboard" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="162" width="414" height="700"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="700" id="z3f-eA-doQ"/>
                                 </constraints>

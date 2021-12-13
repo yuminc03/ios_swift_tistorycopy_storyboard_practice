@@ -9,7 +9,7 @@ import UIKit
 
 class MyBlogPostTableViewHeader: UITableViewHeaderFooterView {
     
-    @IBOutlet weak var categoryChangeButton: UIButton!
+    @IBOutlet weak var categoryChangeButton: UIButton! 
     
     
 }

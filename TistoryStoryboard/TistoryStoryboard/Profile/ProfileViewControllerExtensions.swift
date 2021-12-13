@@ -37,9 +37,9 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     @objc private func categoryChangeButtonDidTapped(button: UIButton) {
         tabBarController?.tabBar.isHidden = true
-//        print("tapped")
-        let vc = ProfileCategoryViewController(profileCategory: profileModel.profileCategory)
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: false)
+
+        let storyboard = UIStoryboard(name: "ProfileCategoryViewController", bundle: Bundle.main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ProfileCategoryViewController")
+        self.present(viewController, animated: true)
     }
 }
