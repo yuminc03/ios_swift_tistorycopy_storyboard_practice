@@ -22,6 +22,11 @@ class ProfileCategoryViewController: UIViewController {
         }
     }
     
+//    @IBAction func MyBlogCategoryButtonDidTapped(_ sender: Any) {
+//        let storyBoard = UIStoryboard(name: "ProfileCategoryViewController", bundle: Bundle.main)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "ProfileCategoryViewController")
+//        self.present(vc, animated: true)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

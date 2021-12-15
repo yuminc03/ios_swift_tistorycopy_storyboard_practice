@@ -28,9 +28,6 @@
                 <constraint firstItem="51d-4d-v0d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="qPk-U9-M4A"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="categoryChangeButton" destination="51d-4d-v0d" id="uX9-LM-cRk"/>
-            </connections>
             <point key="canvasLocation" x="409" y="62"/>
         </view>
     </objects>

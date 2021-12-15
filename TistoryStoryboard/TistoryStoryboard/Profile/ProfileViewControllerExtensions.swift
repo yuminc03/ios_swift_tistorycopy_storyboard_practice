@@ -19,7 +19,6 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MyBlogPostTableViewHeader") as! MyBlogPostTableViewHeader
-        header.categoryChangeButton.addTarget(self, action: #selector(categoryChangeButtonDidTapped), for: .touchUpInside)
         return header
     }
     
@@ -35,11 +34,11 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    @objc private func categoryChangeButtonDidTapped(button: UIButton) {
-        tabBarController?.tabBar.isHidden = true
-
-        let storyboard = UIStoryboard(name: "ProfileCategoryViewController", bundle: Bundle.main)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "ProfileCategoryViewController")
-        self.present(viewController, animated: true)
-    }
+//    @objc private func categoryChangeButtonDidTapped(button: UIButton) {
+//        tabBarController?.tabBar.isHidden = true
+//
+//        let storyboard = UIStoryboard(name: "ProfileCategoryViewController", bundle: Bundle.main)
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "ProfileCategoryViewController")
+//        self.present(viewController, animated: true)
+//    }
 }

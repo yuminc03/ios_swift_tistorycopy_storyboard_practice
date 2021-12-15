@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
     var selectedCategoryIndex: Int = 0
     @IBOutlet weak var profileTableView: UITableView!
     @IBOutlet weak var profileInfoHeaderView: ProfileInfoHeaderView!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
